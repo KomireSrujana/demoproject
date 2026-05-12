@@ -1,0 +1,15 @@
+public class ReverseString {
+
+	public static void main(String[] args) {
+		String str="Hello World";
+		String[] strArray=str.split(" ");
+		for(String s:strArray) {
+			String rev="";
+			for(int i=0;i<s.length();i++) {
+				rev=s.charAt(i)+rev;
+			}
+			System.out.print(rev+" ");
+		}
+	}
+
+}
